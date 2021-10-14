@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="下载"
+			android:id="@+id/downloadButton"/>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/mainEditText1"
+			android:text="/sdcard/C51/out/test.hex"
+			android:hint="hex file path"/>
+
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/mainScrollView1">
+
+		<TextView
+			android:text="USB转串口模块仅支持CH34x系列(例如CH340G)，51单片机仅支持STC89C52RC。使用11.0592MHZ晶振。下载波特率2400bps。"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textIsSelectable="true"
+			android:id="@+id/readTextView"/>
+
+	</ScrollView>
+
+</LinearLayout>
+
